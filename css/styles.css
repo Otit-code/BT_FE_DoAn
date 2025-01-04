@@ -20,6 +20,17 @@
     width: 60px;
     margin-left: 20px;
 }
+
+.star{
+    color: #f5e109;
+    margin-bottom: 0.25rem;
+}
+
+.star i{
+    font-size: 14px;
+    padding-right: 2px;
+}
+
 /* CSS header */
 #header a{
     font-size: 13px;
@@ -49,7 +60,7 @@ nav .navbar-brand img{
 }
 
 nav .nav-item:hover .nav-link{
-    border-bottom: 2px solid #EDE054;
+    /* border-bottom: 2px solid #EDE054; */
     color: #EDE054;
 }
 
@@ -140,8 +151,12 @@ nav .nav-item:hover .nav-link{
     padding: 2rem 0 1rem;
 }
 
+#fav .images{
+    padding: 0;
+}
+
 #fav .info{
-    padding: 1.5rem 0 1rem;
+    padding: 1.5rem 0.5rem 1rem;
 }
 
 #fav .info .intro{
@@ -149,7 +164,7 @@ nav .nav-item:hover .nav-link{
 }
 
 #fav .info .name{
-    width: calc(100% - 93px);
+    color: #593714;
 }
 
 #fav .info .price{
@@ -253,22 +268,12 @@ select{
 }
 
 .product .name{
-    padding: 0;
+    padding: 0 0 0.5rem;
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
     color: #593714;
     text-decoration: none;
-}
-
-.product span{
-    margin: 10px;
-    display: inline-block;
-    color: red;
-}
-
-.product span i{
-    padding: 0 2px;
-    font-size: 14px;
+    text-transform: uppercase;
 }
 
 /* CSS login */
@@ -343,15 +348,6 @@ select{
     width: 20%;
     border: 1px solid #088178;
     margin: 0 2px;
-}
-
-#main .star{
-    color: #f04e24;
-    margin-bottom: 0.25rem;
-}
-
-#main .star i{
-    padding-right: 2px;
 }
 
 #main .rating{
