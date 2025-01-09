@@ -1,9 +1,10 @@
-.divider{
+/* --CSS title */
+.divider {
     text-align: center;
     padding-bottom: 1rem;
 }
 
-.divider::before{
+.divider::before {
     content: "";
     background: url(../images/before.png) no-repeat scroll 0px 10px;
     display: inline-block;
@@ -12,7 +13,7 @@
     margin-right: 20px;
 }
 
-.divider::after{
+.divider::after {
     content: "";
     background: url(../images/after.png) no-repeat scroll 0px 10px;
     display: inline-block;
@@ -21,51 +22,96 @@
     margin-left: 20px;
 }
 
-.star{
-    color: #f5e109;
-    margin-bottom: 0.25rem;
+/* --CSS custom-input */
+.custom-number-input {
+    display: flex;
+    align-items: center;
 }
 
-.star i{
+.custom-number-input input[type="number"] {
+    width: 60px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+.custom-number-input button {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #CCC;
+    border-radius: 1px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.custom-number-input input[type="number"]::-webkit-inner-spin-button,
+.custom-number-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* --CSS iocn-star */
+.star {
+    color: #f5e109;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.star i {
     font-size: 14px;
     padding-right: 2px;
 }
 
-/* CSS header */
-#header a{
+/* --CSS header */
+#header a {
     font-size: 13px;
     color: #593714;
     text-decoration: none;
 }
 
-#header a:hover{
+#header a:hover {
     color: #EDE054;
 }
 
-#header .sec{
+#header .sec {
     border-left: 1px solid #593714;
 }
 
 /* CSS navbar */
-nav{
+nav {
     background: #5F4842;
 }
 
-nav a{
+nav a {
     color: #fff;
 }
 
-nav .navbar-brand img{
+nav .navbar-brand img {
     width: 150px;
 }
 
-nav .nav-item:hover .nav-link{
-    /* border-bottom: 2px solid #EDE054; */
+nav .nav-item {
+    position: relative;
+}
+
+nav .nav-item:hover .nav-link {
     color: #EDE054;
 }
 
+nav .nav-item:hover:after {
+    content: "";
+    width: 35%;
+    height: 2px;
+    background: #EDE054;
+    position: absolute;
+    bottom: 2px;
+    left: 22px;
+}
+
 /* CSS block1 */
-#block1 img{
+#block1 img {
     width: 100%;
 }
 
@@ -77,32 +123,32 @@ nav .nav-item:hover .nav-link{
     padding: 4rem 0;
 }
 
-#banner li{
+#banner li {
     padding: 5px 0;
 }
 
-#banner .images{
+#banner .images {
     text-align: center;
 }
 
 /* CSS menu */
-#menu{
+#menu {
     padding: 2rem 0;
     background: #F4F3EA;
 }
 
-#menu .item{
+#menu .item {
     margin-top: 2rem;
     padding: 10px 2px;
     background: #fff;
     border: 1px solid #cce7d0;
 }
 
-#menu .item img{
+#menu .item img {
     width: 100%;
 }
 
-#menu .item .h5{
+#menu .item .h5 {
     text-align: center;
     margin: 0 20px;
     background: #ccc;
@@ -110,40 +156,40 @@ nav .nav-item:hover .nav-link{
 }
 
 /* CSS introduce */
-#introduce{
+#introduce {
     padding: 1rem 0;
     text-align: center;
 }
 
-#introduce .text{
+#introduce .text {
     padding: 2rem 0;
 }
 
-#introduce .text h1{
+#introduce .text h1 {
     margin-bottom: 1rem;
     font-family: DancingScript;
     color: #593714;
 }
 
-#introduce .text .time{
+#introduce .text .time {
     margin-bottom: 0.5rem;
 }
 
-#introduce .text hr{
+#introduce .text hr {
     width: 50%;
     margin: 1rem auto;
 }
 
-#introduce .text .intro{
+#introduce .text .intro {
     margin: 0 2rem;
 }
 
-#introduce .images img{
+#introduce .images img {
     width: 100%;
 }
 
-/* CSS prods */
-#fav{
+/* CSS favarite */
+#fav {
     background: url(../images/bg-fav-1325.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,29 +197,29 @@ nav .nav-item:hover .nav-link{
     padding: 2rem 0 1rem;
 }
 
-#fav .images{
+#fav .images {
     padding: 0;
 }
 
-#fav .info{
+#fav .info {
     padding: 1.5rem 0.5rem 1rem;
 }
 
-#fav .info .intro{
+#fav .info .intro {
     margin-bottom: 0.5rem;
 }
 
-#fav .info .name{
+#fav .info .name {
     color: #593714;
 }
 
-#fav .info .price{
+#fav .info .price {
     margin: 0;
     color: #f00;
     width: 93px;
 }
 
-#fav .info .intro{
+#fav .info .intro {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -181,68 +227,77 @@ nav .nav-item:hover .nav-link{
 
 
 /* CSS footer */
-#footer{
+#footer {
     padding: 2rem 0;
     background: #5F4842;
     color: #fff;
 }
 
-#footer .logo{
+#footer .logo {
     max-width: 100%;
     display: inline-block;
 }
 
-#footer ul{
+#footer ul {
     list-style: none;
     padding: 0;
 }
 
-#footer a{
+#footer a {
     text-decoration: none;
     color: #fff;
 }
 
-#footer h5{
+#footer h5 {
     padding-top: 2rem;
 }
 
-#footer ul li{
+#footer ul li {
     padding: 2px 0;
 }
 
-#footer h5:hover, #footer ul a:hover{
+#footer h5:hover,#footer ul a:hover {
     color: #EDE054;
 }
 
 @media (max-width: 992px) {
-    #footer .logo{
+    #footer .logo {
+        padding: 0 0.5rem 0 0;
         max-width: 400px;
         display: inline-block;
     }
 }
 
+@media (max-width: 500px) {
+    #footer .logo {
+        padding: 0 0.5rem 0 0;
+        max-width: 100%;
+        display: inline-block;
+    }
+}
+
 /* CSS path */
-#path{
+#path {
     padding: 1rem 0;
     background: #E1E1E2;
 }
 
-#path h5{
+#path h5 {
     padding: 0;
     margin: 0;
 }
 
-#path h5 a{
+#path h5 a {
     text-decoration: none;
     color: #593714;
 }
 
-/* CSS prod */
-#prod{
+/* CSS prods */
+#prods {
     padding: 2rem 0 1rem;
 }
 
-select{
+select {
     box-shadow: none;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -250,43 +305,56 @@ select{
     font-size: 13px;
 }
 
-.product{
+.product {
     border-radius: 50px;
     background: #F4F3EA;
     border-bottom: 5px solid #593714cc;
     display: block;
     text-decoration: none;
     color: #000;
+    box-shadow: 0px 2px 5px #555;
 }
 
-.product img{
+.product img {
     width: 95%;
 }
 
-.product .info{
+.product .info {
     padding: 0.5rem;
 }
 
-.product .name{
-    padding: 0 0 0.5rem;
-    margin: 0;
+.product .name {
+    line-height: 1.2;
+    padding: 0;
+    margin: 0 0 0.5rem;
     font-size: 22px;
+    font-weight: 600;
     color: #593714;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+.product .price{
+    font-weight: 500;
+}
+
 /* CSS login */
-#login form{
+#login {
+    height: 80vb;
+    display: flex;
+    align-items: center;
+}
+
+#login form {
     box-shadow: 0px 0px 10px #ddd;
     background-color: #fff;
     max-width: 500px;
     padding: 32px;
-    margin: 60px auto;
+    margin: auto;
     border-radius: 5px;
 }
 
-#login form input{
+#login form input {
     box-shadow: none;
     height: 40px;
     border: 1px solid #ddd;
@@ -295,22 +363,22 @@ select{
     padding: 0 1rem;
 }
 
-.input-top{
+.input-top {
     position: relative;
-    padding:10px 0;
+    padding: 10px 0;
 }
 
-.lable-top{
+.lable-top {
     position: absolute;
     left: 12px;
     color: #555;
-    padding: 0px 3px;   
+    padding: 0px 3px;
     top: 0px;
     font-size: 13px;
     background: #fff;
 }
 
-.icon-top{
+.icon-top {
     position: absolute;
     top: 10px;
     right: 0;
@@ -322,98 +390,117 @@ select{
     justify-content: center;
 }
 
-.forgot-pass a{
+.forgot-pass a {
     text-decoration: none;
     color: #593714;
 }
 
-.summit a{
+.summit a {
     text-decoration: none;
     color: #593714;
     align-self: center;
     font-weight: bold;
 }
 
-.summit input{
+.summit input {
     width: 40% !important;
     background: #593714;
     color: #fff;
 }
 
-#main .images .img-center{
+/* --CSS single-prod */
+#main .images .img-center {
     width: 100%;
 }
 
-#main .extra img{
+#main .extra img {
     width: 20%;
     border: 1px solid #088178;
     margin: 0 2px;
 }
 
-#main .rating{
+#main .rating {
     border-left: 1px solid #ccc;
     padding-left: 1rem;
 }
 
-#main .rating span{
+#main .rating span {
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
 
-#main .price{
+#main .price {
     font-size: 30px;
     color: #593714;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-#main .action button{
+#main .action button {
     width: 170px;
     padding: 0.25rem 0;
     border-radius: 5px;
 }
 
-#main .action .light{
+#main .action .light {
     color: #593714;
     border: 2px solid #593714;
 }
 
-#main .action .light:hover{
+#main .action .light:hover {
     color: #fff;
     border: 2px solid #593714;
     background: #593714;
 }
 
-#main .action .dark{
+#main .action .dark {
     color: #fff;
     background: #593714;
     border: 2px solid #593714;
 }
 
-#main .action .dark:hover{
-    border: 2px solid #f00;
-    background: #f00;
-}
+/* #main .action .dark:hover{
+    background: #fff;
+    color: #593714;
+} */
 
-#main .nav-prod{
+#main .nav-prod {
     list-style: none;
     padding: 0;
     margin: 2rem 0 1.5rem;
     background: #f6f6f6;
 }
 
-#main .nav-prod li{
+#main .nav-prod li {
     padding: 0.5rem 1rem;
     background: #593714;
     display: inline-block;
     color: #fff;
 }
 
-#news .item{
+.nav-pills{
+    background: #ddd;
+}
+
+.nav-pills .nav-item .nav-link{
+    padding: 0.5rem;
+    color: #593714;
+    background: #ddd;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-item .nav-link.active{
+    color: #fff;
+    background: #593714;
+}
+
+/* --CSS news */
+#news .item {
     position: relative;
 }
 
-.images-60{
+.images-60 {
     display: block;
     width: 100%;
     height: 0px;
@@ -422,7 +509,7 @@ select{
     padding-bottom: 60%;
 }
 
-.images-60 img{
+.images-60 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -433,7 +520,12 @@ select{
     right: 0px;
 }
 
-#news .date{
+.item .images-60:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+#news .date {
     display: inline-flex;
     flex-direction: column;
     padding: 0.5rem 1rem;
@@ -442,49 +534,49 @@ select{
     top: 1rem;
     left: 1rem;
     text-align: center;
-}
+} 
 
-#news .day{
+#news .day {
     font-size: 26px;
     font-weight: bold;
     line-height: 1;
 }
 
-#news .month{
+#news .month {
     font-size: 14px;
     line-height: 1;
 }
 
-#news .wrap-info h3{
+#news .wrap-info h3 {
     font-size: 16px;
 }
 
-#news .wrap-info .time{
+#news .wrap-info .time {
     font-size: 12px;
     color: #aaa;
     margin: 0 0 0.5rem;
 }
 
-#news .wrap-info .info{
+#news .wrap-info .info {
     height: 80px;
     overflow: hidden;
     font-size: 14px;
     color: #666;
 }
 
-#news .sp-title{
+#news .sp-title {
     font-size: 18px;
     padding-left: 0.5rem;
     border-left: 2px solid #593714;
     color: #593714;
 }
 
-#news .nav-news{
+#news .nav-news {
     padding: 0;
     list-style: none;
 }
 
-#news .nav-news .info{
+#news .nav-news .info {
     color: #222;
     font-weight: 500;
     line-height: 1.2;
@@ -494,4 +586,5 @@ select{
     max-height: 50px;
     font-size: 93%;
 }
+
 

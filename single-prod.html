@@ -95,7 +95,7 @@
               <a class="nav-link" href="#">Giới thiệu</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="./new.html">Tin tức</a>
+              <a class="nav-link" href="./news.html">Tin tức</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link" href="#">Liên hệ</a>
@@ -138,7 +138,7 @@
           </div>
           <div class="col-md-8 col-12 py-3">
             <h1 class="mb-3">Americano</h1>
-            <div class="d-flex d-md-block justify-content-between pb-3">
+            <div class="d-md-flex d-block gap-3 pb-3">
               <div class="star">
                 <i class="bi bi-star"></i><i class="bi bi-star"></i
                 ><i class="bi bi-star"></i><i class="bi bi-star"></i
@@ -156,16 +156,20 @@
               cà phê Robusta và Arabica chất lượng hảo hạng.
             </p>
             <p class="price">45.000<sup>đ</sup></p>
-            <div class="quantily">
-              <label for="" class="pe-5">Số lượng:</label
-              ><input
-                type="number"
-                min="1"
-                max="100"
-                step="1"
-                value="1"
-                class="text-center"
-              />
+            <div class="quantily d-flex align-items-center">
+              <label for="" class="pe-5">Số lượng:</label>
+              <div class="custom-number-input">
+                <button class="decrement">-</button>
+                <input
+                  type="number"
+                  class="btn"
+                  id="numberInput"
+                  value="1"
+                  min="0"
+                  max="100"
+                />
+                <button class="increment">+</button>
+              </div>
             </div>
             <div class="action mt-3">
               <button class="light">
@@ -174,10 +178,45 @@
               <button class="dark">Mua ngay</button>
             </div>
           </div>
-          <div class="col-12 mb-4">
-            <ul class="nav-prod">
-              <li>MÔ TẢ SẢN PHẨM</li>
-            </ul>
+        </div>
+        <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              MÔ TẢ SẢN PHẨM
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              QUY TRÌNH CHẾ BIẾN
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content px-3" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
             <p>
               Thành phần của Americano là Espresso và nước sôi pha loãng nên cà
               phê Americano không quá đắng. Khi gọi một ly cà phê Americano ở
@@ -191,6 +230,37 @@
               muốn thêm vào ra sao cho hợp miệng. Thông thường tỉ lệ sẽ là 1/2
               Espresso : 1/2 nước sôi hoặc 1/3 Espresso : 2/3 nước sôi.
             </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <ul>
+              <li class="mb-3">
+                Bước 1: Nghiền và lấy khoảng 18 gram bột cafe đã xay cho vào tay
+                cầm máy pha cà phê Espresso.
+              </li>
+              <li class="mb-3">
+                Bước 2: Dàn bột cafe trong bộ lọc Porter của máy ống. Lưu ý
+                không nén quá chặt.
+              </li>
+              <li class="mb-3">
+                Bước 3: Lắp bộ lọc porter nằm ngang với máy ép và vặn sao cho
+                vừa khớp với máy pha cafe. Bật công tắc trên máy để kích hoạt
+                nước nóng. Đặt ly đựng cà phê dưới bộ lọc porter. Khi cà phê
+                xuống được khoảng ⅔ ly thì cho máy dừng lại. Lúc này bạn đã được
+                một ly Espresso nguyên chất.
+              </li>
+              <li class="mb-3">
+                Bước 4: Để tạo ra một ly Americano thơm ngon, bạn nên cho thêm
+                từ 30 đến 70ml nước sôi vào ly Espresso nguyên chất bạn mới ép
+                được. Tùy vào độ đậm nhạt của ly cà phê Americano mong muốn mà
+                bạn tùy chỉnh lượng nước sôi thêm vào sao cho phù hợp.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -236,5 +306,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
