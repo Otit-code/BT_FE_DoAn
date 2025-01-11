@@ -53,3 +53,31 @@ nextBtn.addEventListener('click', () => {
 gallery.addEventListener('wheel', (event) => {
     event.preventDefault();
 });
+
+// Lấy các phần tử cần thiết
+const footer = document.getElementById('footer');
+const content = document.getElementById('login'); // Phần chứa nội dung chính
+
+// Hàm để cập nhật vị trí của footer
+function updateFooterPosition() {
+  const windowHeight = window.innerHeight;
+  const contentHeight = content.offsetHeight;
+  const footerHeight = footer.offsetHeight;
+
+  // Tính toán chiều cao còn lại cho footer
+  const remainingHeight = windowHeight - contentHeight;
+
+  // Nếu nội dung nhỏ hơn cửa sổ, đẩy footer xuống dưới cùng
+  if (remainingHeight > footerHeight) {
+    footer.style.position = 'absolute';
+    footer.style.bottom = '0';
+  } else {
+    footer.style.position = 'static';
+  }
+}
+
+// Gọi hàm khi trang load xong
+window.onload = updateFooterPosition;
+
+// Gọi lại hàm khi kích thước cửa sổ thay đổi
+window.addEventListener('resize', updateFooterPosition);

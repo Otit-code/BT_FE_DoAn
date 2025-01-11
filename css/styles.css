@@ -229,12 +229,21 @@ nav .nav-item:hover:after {
     white-space: nowrap;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+ 
+
 
 /* CSS footer */
 #footer {
     padding: 2rem 0;
     background: #5F4842;
     color: #fff;
+    position: relative;
+    margin-top: auto; /* Điều này giúp footer ở cuối trang */
 }
 
 #footer .logo {
@@ -282,18 +291,35 @@ nav .nav-item:hover:after {
 
 /* CSS path */
 #path {
-    padding: 1rem 0;
+    padding: 0;
+    margin: 0;
     background: #E1E1E2;
 }
 
-#path h5 {
-    padding: 0;
+#path ul{
+    padding: 1rem 0;
     margin: 0;
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 1;
 }
 
-#path h5 a {
+#path ul li{
+    display: inline-block;
+}
+
+#path ul a{
     text-decoration: none;
     color: #593714;
+}
+
+#path ul i{
+    color: #593714;
+    margin: 0 2px;
 }
 
 /* CSS prods */
@@ -344,9 +370,9 @@ select {
 
 /* CSS login */
 #login {
-    height: 80vb;
     display: flex;
     align-items: center;
+    min-height: 100%; /* Giúp phần nội dung chiếm đủ chiều cao */
 }
 
 #login form {
@@ -591,6 +617,7 @@ select {
     left: 0px;
     bottom: 0px;
     right: 0px;
+    transition: all 0.25s;
 }
 
 .item .images-60:hover img {
@@ -649,8 +676,10 @@ select {
     list-style: none;
 }
 
-#news .nav-news .info {
+#news .nav-news .info{
+    padding-right: 0.75rem;
     color: #222;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     overflow: hidden;
@@ -658,4 +687,42 @@ select {
     margin: 0;
     max-height: 50px;
     font-size: 93%;
+}
+
+/* CSS single-news */
+#single-news{
+
+}
+
+#single-news .share-fb{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#single-news .title{
+    color: #272727;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#single-news .info{
+    color: #858585;
+    font-size: 14px;
+}
+
+#single-news .content{
+    background: #f5f5f5;
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 20px;
+}
+
+#single-news .content p{
+    margin-bottom: 0.7rem;
+    font-size: 14px;
+}
+
+#single-news .content p img{
+    margin: 0 auto;
+    display: block;
+    max-width: 95%;
 }
