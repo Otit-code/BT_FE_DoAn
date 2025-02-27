@@ -22,10 +22,10 @@
         <div class="row">
           <div class="col-md-6 d-none d-md-block">
             <div class="support">
-              <a href="" class="pe-2"
+              <a href="tel:0981691771" class="pe-2"
                 ><i class="bi bi-telephone-fill"></i> 1900 7029</a
               >
-              <a href="" class="sec ps-2"
+              <a href="mailto:tmt@gmail.com" class="sec ps-2"
                 ><i class="bi bi-envelope-fill"></i> info@design.com</a
               >
             </div>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-lg">
         <button
           class="navbar-toggler"
@@ -57,7 +57,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="./index.html">
-          <!-- <img src="./images/logo-footer.png" alt="" /> -->
+          <img src="./images/logo-footer.png" alt="" />
           <img src="./images/loggo2.png" alt="" />
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -111,7 +111,7 @@
         <div class="d-flex gap-4">
           <div class="search">
             <i class="bi bi-search"></i>
-            <!-- <form class="d-flex" role="search">
+            <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
@@ -121,9 +121,128 @@
               <button class="btn btn-outline-light" type="submit">
                 Search
               </button>
-            </form> --><!-- Button trigger modal -->
+            </form>
           </div>
           <div class="cart">
+            <a href="./cart.html"><i class="bi bi-cart3"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top z-2">
+      <div class="container-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">
+          <!-- <img src="./images/logo-footer.png" alt="" /> -->
+          <img src="./images/loggo2.png" alt="" />
+        </a>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-light">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              LoveSick Coffe
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item px-lg-3">
+                <a class="nav-link active" href="./index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item px-lg-3 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html">Cà phê</a>
+                  </li>
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html"
+                      >Bánh ngọt</a
+                    >
+                  </li>
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html"
+                      >Smoothies</a
+                    >
+                  </li>
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html"
+                      >Trà hoa quả</a
+                    >
+                  </li>
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html">Trà sửa</a>
+                  </li>
+                  <li class="py-lg-0 py-1">
+                    <a class="dropdown-item" href="./shop_cafe.html"
+                      >Tráng miệng</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-lg-3">
+                <a class="nav-link" href="./about.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item px-lg-3">
+                <a class="nav-link" href="./news.html">Tin tức</a>
+              </li>
+              <li class="nav-item px-lg-3">
+                <a class="nav-link" href="./videos.html">Video</a>
+              </li>
+              <li class="nav-item px-lg-3">
+                <a class="nav-link" href="./contact.html">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <div class="search p-2">
+            <i class="bi bi-search"></i>
+            <form class="" role="search">
+              <div id="input-search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success position-absolute top-0 end-0"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="cart p-2">
             <a href="./cart.html"><i class="bi bi-cart3"></i></a>
           </div>
         </div>
@@ -159,7 +278,7 @@
     </div>
     <div id="menu">
       <div class="container-lg">
-        <h3 class="divider">DANH MỤC SẢN PHẨM</h3>
+        <h2 class="divider">DANH MỤC SẢN PHẨM</h2>
         <div class="row">
           <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="item">
@@ -202,9 +321,9 @@
     </div>
     <div id="fav">
       <div class="container-lg">
-        <h3 class="divider">SẢN PHẨM NỔI BẬT</h3>
+        <h2 class="divider">SẢN PHẨM NỔI BẬT</h2>
         <div class="row justify-content-around">
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod row p-2">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img
@@ -228,8 +347,42 @@
                 </p>
               </div>
             </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/banhdau-0550.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Bánh Dâu Mơ</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">60.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod p-2 row">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img
@@ -253,8 +406,42 @@
                 </p>
               </div>
             </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/banhkem-socola.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Bánh Kem Socola</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">200.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod p-2 row">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img
@@ -278,8 +465,42 @@
                 </p>
               </div>
             </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/tratraicaydau.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Trà Trái Cây Dâu Xí Muội</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">45.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod p-2 row">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img
@@ -303,8 +524,42 @@
                 </p>
               </div>
             </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/cafe-late-2449.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Cafe Latte</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">50.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod p-2 row">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img style="width: 100%" src="./images/cuo-cake.png" alt="" />
@@ -324,8 +579,42 @@
                 </p>
               </div>
             </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/cuo-cake.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Bánh CupCake Chang Dừa</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">60.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <!-- <div class="col-lg-5 col-md-6">
             <div class="prod p-2 row">
               <div class="images col-lg-4 col-md-4 col-3">
                 <img
@@ -347,6 +636,40 @@
                   cách hoàn toàn từ loại cà phê rang được phối trộn độc đáo từ
                   những hạt cà phê Robusta và Arabica...
                 </p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-xl-5 col-md-6">
+            <div class="prod">
+              <div class="images">
+                <img src="./images/olong-kemtrung.png" alt="" />
+              </div>
+              <div class="info">
+                <div class="row h-100">
+                  <div class="col-12">
+                    <h4 class="name">Oolong Machiato Kem Trứng</h4>
+                  </div>
+                  <div class="col-6">
+                    <p class="price">55.000 VNĐ</p>
+                  </div>
+                  <div class="col-6 text-end">
+                    <p class="star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="intro">
+                      Đích thực là ly cà phê Latte ngon đậm đà! Được chiết xuất
+                      một cách hoàn toàn từ loại cà phê rang được phối trộn độc
+                      đáo từ những hạt cà phê Robusta và Arabica...
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -397,48 +720,799 @@
         </div>
       </div>
     </div>
-    <div id="footer">
+    <div id="fav-menu">
       <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-12">
-            <img class="logo" src="./images/logo-footer.png" alt="" />
-            <!-- <img class="logo" src="./images/loggo2.png" alt="" /> -->
-            <p>
-              Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi
-              người xích lại gần nhau và tìm thấy niềm vui, sự sẻ chia thân tình
-              bên những tách cà phê đượm hương, chất lượng.
-            </p>
-          </div>
-          <div class="col-lg-8 col-md-12 col-12 row">
-            <div class="col-md-6 col-6">
-              <h5>LIÊN HỆ VỚI CHÚNG TÔI</h5>
-              <ul>
-                <li><a href="">Hotline: 1900 7029</a></li>
-                <li>
-                  <a href=""
-                    >Trụ sở chính: 52-54 Hậu Giang, P.2, Q.Tân Bình, TP.HCM</a
-                  >
-                </li>
-                <li><a href="">Email: info@design.com</a></li>
-              </ul>
+        <h2 class="divider">MENU HÔM NAY</h2>
+        <ul
+          class="nav nav-pills mb-3 justify-content-center gap-3"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Cà Phê
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Đồ Uống
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Bánh Ngọt
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row justify-content-around">
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/caphe/coffee-black-2217.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Cafe Đen Đá</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">30.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/caphe/bacxiu-5314.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bạc Xỉu</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">30.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/caphe/Untitled-1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Mocha</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">45.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/cafe-late-2449.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Cafe Latte</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">50.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/caphe/americano-2250.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Americano</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">45.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/caphe/espresso-2422.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Cà Phê Espresso</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">50.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6 col-6">
-              <h5>CHÍNH SÁCH</h5>
-              <ul>
-                <li><a href="">Hướng Dẫn Mua Hàng</a></li>
-                <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
-                <li><a href="">Chăm Sóc Khách Hàng</a></li>
-              </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row justify-content-around">
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img
+                      src="./images/trasua/trasua-removebg-preview-3334.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Trà Sửa Hạnh Nhân Cookie</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">30.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img
+                      src="./images/trasua/trung-removebg-preview-3351.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Ôlong Machiato Kem Trứng</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">350.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/trasua/TSKM.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Trà Sửa Khoai Môn Kem Chese</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">40.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/trasua/1-2129.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Trà Sửa Kem Socola</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">35.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/trasua/pudding-1547.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Trà Sửa Pudding Đậu Đỏ</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">45.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/trasua/2-2443.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Trà Sửa Matcha Dâu Kem</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">42.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row justify-content-around">
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/banhkem-socola.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh Kem Socola</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">200.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/banhdau-0550.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh Dâu Mơ</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">60.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/cake/donut-socola.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh Donut Socola</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">30.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/cake/banh6-0538.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh Ngọt Nhân Dâu Tây</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">60.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img src="./images/cuo-cake.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh CupCake Chang Dừa</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">60.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-md-6">
+                <div class="prod">
+                  <div class="images">
+                    <img
+                      src="./images/cake/flan-removebg-preview-3120.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <h4 class="name">Bánh Flan</h4>
+                      </div>
+                      <div class="col-6">
+                        <p class="price">8.000 VNĐ</p>
+                      </div>
+                      <div class="col-6 text-end">
+                        <p class="star">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                        </p>
+                      </div>
+
+                      <div class="col-12">
+                        <p class="intro">
+                          Đích thực là ly cà phê Latte ngon đậm đà! Được chiết
+                          xuất một cách hoàn toàn từ loại cà phê rang được phối
+                          trộn độc đáo từ những hạt cà phê Robusta và Arabica...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <div id="pict">
+      <div class="container-lg">
+        <h2 class="divider">HÌNH ẢNH QUÁN</h2>
+        <div class="row">
+          <div class="col-md-7 py-3">
+            <div class="images">
+              <img src="./images/shop1.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5 py-3">
+            <div class="images">
+              <img src="./images/shop2.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5 py-3">
+            <div class="images">
+              <img src="./images/shop3.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7 py-3">
+            <div class="images">
+              <img src="./images/shop4.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <p>
+              <!-- <img
+                class="logo"
+                src="./images/logo-footer.png"
+                alt=""
+              /> -->
+              <img class="logo" src="./images/loggo2.png" alt="" />
+            </p>
+            <p style="text-align: justify">
+              Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi
+              người xích lại gần nhau và tìm thấy niềm vui, sự sẻ chia thân tình
+              bên những tách cà phê đượm hương, chất lượng.
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-6 col-7">
+            <h5>LIÊN HỆ</h5>
+            <ul>
+              <li><a href="">Hotline: 1900 7029</a></li>
+              <li>
+                <a href=""
+                  >Trụ sở chính: 52-54 Hậu Giang, P.2, Q.Tân Bình, TP.HCM</a
+                >
+              </li>
+              <li><a href="">Email: info@design.com</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-5">
+            <h5>CHÍNH SÁCH</h5>
+            <ul>
+              <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+              <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+              <li><a href="">Chăm Sóc Khách Hàng</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-1 col-lg-2 col-md-2 col-12">
+            <h5>SOCIAL</h5>
+            <ul class="social">
+              <li>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-telegram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-messenger"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-chat-dots-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
 </html>

@@ -19,6 +19,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const searchElement = document.querySelector('.search');
+  const inputSearch = document.getElementById('input-search');
+
+  // Khi click vào search, hiện hoặc ẩn #input-search
+  searchElement.addEventListener('click', function(event) {
+    // Ngăn không cho sự kiện click lan ra ngoài
+    event.stopPropagation();
+    // Kiểm tra trạng thái hiển thị và thay đổi
+    if (inputSearch.style.display === 'none' || inputSearch.style.display === '') {
+      inputSearch.style.display = 'block'; // Hiện
+    } else {
+      inputSearch.style.display = 'none'; // Ẩn
+    }
+  });
+
+  // Khi click ra ngoài, ẩn #input-search
+  document.addEventListener('click', function(event) {
+    // Kiểm tra nếu click ra ngoài search và input-search thì ẩn input-search
+    if (!searchElement.contains(event.target) && !inputSearch.contains(event.target)) {
+      inputSearch.style.display = 'none'; // Ẩn
+    }
+  });
+
+  // Ngừng sự kiện click khi click vào input-search để không ẩn nó
+  inputSearch.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+});
+
 // show images
 const images = document.querySelectorAll('.images img');
 const prevBtn = document.querySelector('.prev');
@@ -54,30 +84,40 @@ gallery.addEventListener('wheel', (event) => {
     event.preventDefault();
 });
 
-// Lấy các phần tử cần thiết
-const footer = document.getElementById('footer');
-const content = document.getElementById('login'); // Phần chứa nội dung chính
+document.addEventListener('DOMContentLoaded', function () {
+  // Lấy các phần tử cần thiết
+  const addToCartButton = document.querySelector('.light');
+  const numberInput = document.getElementById('numberInput');
+  const cartMessage = document.createElement('div');
+  cartMessage.style.position = 'fixed';
+  cartMessage.style.top = '50%';   // Căn giữa theo chiều dọc
+  cartMessage.style.left = '50%';  // Căn giữa theo chiều ngang
+  cartMessage.style.transform = 'translate(-50%, -50%)'; // Đưa nó về chính giữa
+  cartMessage.style.backgroundColor = '#8d8d8d';
+  cartMessage.style.color = 'white';
+  cartMessage.style.padding = '10px 20px';
+  cartMessage.style.borderRadius = '10px';
+  cartMessage.style.display = 'none';
+  cartMessage.innerText = 'Đã được thêm vào giỏ hàng!';
+  document.body.appendChild(cartMessage);
 
-// Hàm để cập nhật vị trí của footer
-function updateFooterPosition() {
-  const windowHeight = window.innerHeight;
-  const contentHeight = content.offsetHeight;
-  const footerHeight = footer.offsetHeight;
+  // Lắng nghe sự kiện click vào nút "Thêm vào giỏ"
+  addToCartButton.addEventListener('click', function () {
+    // Hiển thị thông báo
+    cartMessage.style.display = 'block';
+    
+    // Lấy giá trị số lượng từ input
+    const quantity = numberInput.value;
 
-  // Tính toán chiều cao còn lại cho footer
-  const remainingHeight = windowHeight - contentHeight;
+    // Đảm bảo giá trị là 1 nếu nó không phải là số hợp lệ
+    if (parseInt(quantity) <= 0 || isNaN(quantity)) {
+      numberInput.value = 1; // Đặt lại giá trị về 1 nếu không hợp lệ
+    }
 
-  // Nếu nội dung nhỏ hơn cửa sổ, đẩy footer xuống dưới cùng
-  if (remainingHeight > footerHeight) {
-    footer.style.position = 'absolute';
-    footer.style.bottom = '0';
-  } else {
-    footer.style.position = 'static';
-  }
-}
-
-// Gọi hàm khi trang load xong
-window.onload = updateFooterPosition;
-
-// Gọi lại hàm khi kích thước cửa sổ thay đổi
-window.addEventListener('resize', updateFooterPosition);
+    // Ẩn thông báo sau 3 giây
+    setTimeout(function () {
+      cartMessage.style.display = 'none';
+    }, 1500);
+    numberInput.value = 1;
+  });
+});
